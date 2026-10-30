@@ -1,20 +1,14 @@
 const projects = [
   {
-    title: "Portfolio Website",
-    desc: "A responsive personal portfolio built with React and Tailwind CSS.",
-    tech: "React, Tailwind",
-    link: "https://github.com/munibaali21/my-landing-page",
+    title: "Live Portfolio Website",
+    desc: "This responsive portfolio, deployed on Vercel.",
+    tech: "React, Tailwind, Vercel",
+    link: "https://my-landing-page-7tui.vercel.app",
   },
   {
-    title: "Landing Page",
-    desc: "A clean product landing page with reusable components.",
-    tech: "React, Tailwind",
-    link: "https://github.com/munibaali21/my-landing-page",
-  },
-  {
-    title: "Task Tracker",
-    desc: "A simple app to add and manage daily tasks.",
-    tech: "React",
+    title: "Source Code",
+    desc: "Component-based code and README on GitHub.",
+    tech: "React, Tailwind, Git",
     link: "https://github.com/munibaali21/my-landing-page",
   },
 ];
@@ -25,7 +19,7 @@ export default function Projects() {
       <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900">
         Projects
       </h2>
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto">
         {projects.map((p) => (
           <div
             key={p.title}
