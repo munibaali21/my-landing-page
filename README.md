@@ -1,16 +1,48 @@
-# React + Vite
+# Responsive Portfolio Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive portfolio landing page built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+**Live Demo:** https://my-landing-page-7tui.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React (Vite)
+- Tailwind CSS
+- Deployed on Vercel
 
-## React Compiler
+## Project Structure
+```
+src/
+  components/
+    Navbar.jsx
+    Hero.jsx
+    About.jsx
+    Projects.jsx
+    Contact.jsx
+    Footer.jsx
+  App.jsx
+  index.css
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Component-Based Design
+The UI is split into reusable components. Each section (Navbar, Hero, About, Projects, Contact, Footer) lives in its own file and is assembled in `App.jsx`. Project cards are rendered from a data array using `map()`.
 
-## Expanding the ESLint configuration
+## Design System
+- **Primary color:** Indigo (`indigo-600`)
+- **Accent color:** Amber (`amber-400`)
+- **Typography:** Sans-serif with a clear hierarchy (`text-4xl` for headings, `text-2xl` for sections, `text-base` for body)
+- **Spacing:** Consistent Tailwind spacing scale (`px-6`, `py-16`, `gap-6`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Responsive Behavior
+Built mobile-first with Tailwind breakpoints:
+- **Mobile:** single-column layout, compact navbar
+- **Tablet (`sm`/`md`):** 2-column project cards, larger headings
+- **Desktop (`lg`):** wider layout and bigger hero text
+
+## Run Locally
+```
+npm install
+npm run dev
+```
+
+## Author
+Muniba Ali
